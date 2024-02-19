@@ -1,7 +1,6 @@
-{{page-title "MyApp"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+{{@model.bar}}
+{{log @model.bar}}
+Loading: {{if @model.bar.isLoaded 'true' 'false'}}
+Fulfilled: {{if @model.bar.isFulfilled 'true' 'false'}}
